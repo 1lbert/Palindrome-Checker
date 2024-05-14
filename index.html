@@ -12,22 +12,29 @@
 </head>
 
 <body>
-    <script src="script.js"> </script>
     <main class="main-section">
         <div class="img-wrapper" >
-            <img src="image/freeCodeCamp Logo.png" alt="freeCodeCamp Logo" style="height: 30px;">
+            <img src="img/freeCodeCamp Logo.png" alt="freeCodeCamp Logo" style="height: 30px;">
         </div>
-        <h1>Is it a Palindrome?</h1>
+        <div class="title">
+            <h1>Is it a Palindrome?</h1>
+        </div>
         <div class="text-wrapper">
-            <label class="text-instruction" id="text-input" for="text-input">Enter in text to check for a Palindrome:</label>
-        <div class="text-input">
-            <input class="input-text" type="text-input">
-            <button id="check-btn"> Check </button>
-        </div>
+            <label class="text-instruction" for="text-input">Enter in text to check for a Palindrome:</label>
+            <div class="text-input">
+                <input id="text-input" type="text-input">
+            </div>
+            <div class="button">
+                <button id="check-btn" onclick = "check()"> Check </button>
+            </div>
+            <div class="result">
+                <p id="result-el"></p>
+            </div>
         </div>
         <div class="palindrome-definition">
             <p></p><i class="ri-lightbulb-line"></i><span>A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p></span>
         </div>
     </main>
+    <script src="script.js"> </script>
 </body>
 </html>

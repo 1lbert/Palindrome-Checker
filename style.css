@@ -1,5 +1,4 @@
 * {
-    padding: 0;
     margin: 0;
 }
 
@@ -22,9 +21,8 @@ h1 {
     padding: 10px 0;
     text-align: center;
 }
-
-
 .text-wrapper { 
+    background-color: white;
     width: 30%;
     min-width: 320px;
     padding: 20px;
@@ -34,14 +32,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: white;
 }
 .text-instruction {
     color: black;
     font-size: 14px;
     margin: 0 0 20px;
 }
-.input-text { 
+
+#text-input { 
+    padding: 1em;
     border: none;
     border-bottom: 1px solid #5A01A7;
     margin: 10px;
@@ -49,15 +48,26 @@ h1 {
 #check-btn {
     background-color: #5A01A7;
     color: white;
+    font-weight: bold;
+    border: none;
     border-radius: 15px;
     padding: 10px;
 }
-
+#check-btn:hover {
+    background-color:hsl(272, 99%, 10%);
+    cursor: pointer;
+}
+#result-el { 
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 1em;
+}
 
 .palindrome-definition {
     text-align: center;
     width: 30%;
-    min-width: 320px;
+    min-width: 300px;
     margin: 20px 0 0;
     padding: 20px;
     background-color: rgb(13, 71, 13);
@@ -67,4 +77,3 @@ h1 {
     padding: 5px;
     color: yellow;
 }
-
